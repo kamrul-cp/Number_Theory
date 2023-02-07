@@ -9,7 +9,7 @@ long long power(int b, long p, long long m){
             p--;
         }
         else{
-            b*=b;
+            b=(b*b)%m;
             p/=2;
         }
     }
